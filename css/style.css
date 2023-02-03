@@ -127,3 +127,18 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+ /* Aggiungendo semplicemente la max-width al container e la width 
+ al 100% l'intera pagina risulta responsive sia per la versione 
+ desktop che tablet. */
+ @media screen and (min-width: 481px) {
+   
+    .container {
+    max-width: 1140px;
+    width: 100%;
+ }
+
+ }
+
+
+ 
