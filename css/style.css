@@ -111,6 +111,7 @@ img {
 .why-us {
     margin-bottom: 3rem;
 }
+
 .why-us .col-left {
     width: 40%;
 }
@@ -128,17 +129,57 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
- /* Aggiungendo semplicemente la max-width al container e la width 
+/* Aggiungendo semplicemente la max-width al container e la width 
  al 100% l'intera pagina risulta responsive sia per la versione 
  desktop che tablet. */
- @media screen and (min-width: 481px) {
-   
+@media screen and (min-width: 481px) {
+
     .container {
-    max-width: 1140px;
-    width: 100%;
- }
+        max-width: 1140px;
+        width: 100%;
+    }
 
- }
+}
 
+@media screen and (max-width: 480px) {
 
- 
+    .container {
+        max-width: 1140px;
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lessons .col {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .steps {
+        margin: 0;
+        padding: 3rem 0 0 0;
+    }
+
+    .steps .col {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .why-us {
+        padding: 3rem 2rem;
+        margin: 0;
+        background-color: #222222;
+    }
+
+    .why-us .col {
+        width: 100%;
+    }
+
+    .why-us .col-left {
+        margin-bottom: 3rem;
+    }
+
+}
